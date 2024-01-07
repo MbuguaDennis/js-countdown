@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(background_image.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    font-family: 'Lato', 'Poppins', 'Roboto Mono', sans-serif; /* Group fonts with commas */
+}
+
+.countdown__container {
+    border: 2px solid linen;
+    padding: 30px;
+    text-align: center;
+}
+
+.increment__title {
+    color: blue;
+    margin-bottom: 15px;
+    display: none;
+}
+
+.decrement__title {
+    color: red;
+    margin-top: 15px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    color: gold;
+    font-size: 1.25rem;
+    border-radius: 3.5px;
+    line-height: 1.5;
+}
+
+.btn:hover, :focus { /* Add space after comma */
+    cursor: pointer;
+}
+
+.increment {
+    background-color: blue;
+    margin-bottom: 0.5em;
+}
+
+.decrement {
+    background-color: red;
+}
+
+.count {
+    font-size: 2rem;
+    color: purple;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+/* Breakpoints */
+
+@media screen and (max-width: 500px) { /* Space after "and" */
+    h2 {
+        font-size: 0.75rem;
+        word-wrap: no-wrap;
+        text-align: center;
+    }
+}
